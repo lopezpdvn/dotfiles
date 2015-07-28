@@ -1,0 +1,17 @@
+FontHeight=11
+Transparency=off
+OpaqueWhenFocused=no
+CursorType=block
+CursorBlinks=no
+PgUpDnScroll=no
+Rows=49
+Columns=80
+BellFlash=yes
+Font=Lucida Console
+FontIsBold=no
+Locale=C
+Charset=UTF-8
+CopyAsRTF=yes
+ClicksTargetApp=yes
+ClicksPlaceCursor=yes
+BoldAsFont=no

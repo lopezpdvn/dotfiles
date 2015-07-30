@@ -31,3 +31,4 @@ endif
 " mouse is moved.
 set mousehide
 
+execute pathogen#infect()

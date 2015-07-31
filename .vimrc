@@ -22,7 +22,6 @@ set showcmd
 " far, matches.  The matched string is highlighted.
 set incsearch
 
-" In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
   set mouse=a
 endif
@@ -31,4 +30,31 @@ endif
 " mouse is moved.
 set mousehide
 
+" Switch syntax highlighting on, when the terminal has colors or when running
+" the gui.  Also switch on highlighting the last used search pattern.
+if &t_Co > 2 || has("gui_running")
+    syntax enable
+    set hlsearch
+endif
+
+if has("autocmd")
+  filetype plugin indent on
+
+  " TODO: Put these in an autocmd group, so that we can delete them easily.
+  "augroup vimrcEx
+  "au!
+      " When editing a file, always jump to the last known cursor position.
+      " Don't do it when the position is invalid or when inside an event handler
+      " (happens when dropping a file on gvim).
+      " Also don't do it when the mark is in the first line, that is the default
+      " position when opening a file.
+      "autocmd BufReadPost *
+        "\ if line("'\"") > 1 && line("'\"") <= line("$") |
+        "\   exe "normal! g`\"" |
+        "\ endif
+
+  "augroup END
+endif
+
 execute pathogen#infect()
+

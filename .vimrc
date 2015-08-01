@@ -56,5 +56,37 @@ if has("autocmd")
   "augroup END
 endif
 
+" Indentation and tab configuration -------------------------------------------
+" In 'tabstop' option help entry, 4 main ways to use tabs in Vim are
+" described.  This options set way 2:  set 'tabstop' and 'shiftwidth' to
+" whatever value and use 'expandtab'.  This way space will always be inserted.
+" The formatting will never be messed up when 'tabstop' is changed.
+set autoindent
+
+set tabstop=4       " Number of spaces that a <Tab> in the file counts for.
+
+" Number of spaces to use for each step of (auto)indent.  Used for 'cindent',
+" >>, <<, etc.
+set shiftwidth=4
+
+" In Insert mode: use the appropiate number of spaces to insert a <Tab>.
+" Spaces are used in indents with the '>' and '<' commands.  Note: to insert a
+" real tab, use CTRL-V<Tab>.
+set expandtab
+
+" Number of spaces that a <Tab> counts for while performing editing operations,
+" like inserting a <Tab> or using <BS>.  It 'feels' like <Tab>s are being
+" inserted, while in fact only spaces are used (because of 'expandtab' option
+" is set, see below).
+set softtabstop=4
+
+" When on, a <Tab> in front of a line inserts blanks according to 'shiftwidth'.
+" 'tabstop' or 'softtabstop' is used in other places.  A <BS> will delete a
+" 'shiftwidth' worth of space at the start of the line.
+set smarttab
+" ----------------------------------------------------------------------
+
+"TODO set textwidth=79
+
 execute pathogen#infect()
 

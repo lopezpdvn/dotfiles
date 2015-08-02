@@ -86,6 +86,17 @@ set softtabstop=4
 set smarttab
 " ----------------------------------------------------------------------
 
+set wildmenu
+set wildmode=longest:full,full
+set wildignore+=*~
+
+set background=dark
+
+set ignorecase
+set smartcase
+
+set showmatch
+
 "TODO set textwidth=79
 
 execute pathogen#infect()

@@ -1,0 +1,16 @@
+[user]
+	name = Pedro Ivan Lopez
+	email = m@pedroivanlopez.com
+[core]
+	editor = vim
+	autocrlf = input
+	# autocrlf = true   # windows
+[merge]
+	tool = vimdiff
+[color]
+	status = auto
+	branch = auto
+	ui = true
+[alias]
+	s = status -s
+	lg = log --oneline --all --graph --decorate

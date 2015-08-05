@@ -97,7 +97,26 @@ set smartcase
 
 set showmatch
 
-"TODO set textwidth=79
+" Abbreviations
+iabbrev teh the
+iabbrev otor otro
+iabbrev PILH Pedro Iván López Hernández
+iabbrev indnent indent
+iabbrev corot corto
+
+" ----------------------------------------------------------------------------- 
+" Include options to influence how Vim formats text.  Default is 'tcq':
+"   - t :   Auto-wrap text using textwidth.
+"   - c :   Auto-wrap comments using textwidth, inserting the current comment
+"           leader automatically.
+"   - q :   Allow formatting of comments with 'gq'.
+" The following options are added:
+"   - r :   Automatically insert the current comment leader after hitting
+"           <Enter> in Insert mode.
+"   - o :   Automaticalyy insert the current comment leader after hitting 'o'
+"           or 'O' in Normal mode.
+"   - n :   When formatting text, recognize numbered lists.  Use
+"           'formatlistpat' option.
+set formatoptions+=r,o,n
 
 execute pathogen#infect()
-

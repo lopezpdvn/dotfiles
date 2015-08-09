@@ -1,0 +1,68 @@
+# Includes comments from official documentation at https://www.cis.upenn.edu/~bcpierce/unison/docs.html
+
+# Skip asking for confirmations on non-conflicting changes. (More precisely,
+# when the user interface is done setting the propagation direction for one
+# entry and is about to move to the next, it will skip over all non-conflicting
+# entries and go directly to the next conflict.)
+auto = false
+
+# UI will ask no questions at all.  Non-conflicting changes will be propagated;
+# conflicts will be skipped.
+batch = false
+
+# Unison will request an extra confirmation if it appears that the entire
+# replica has been deleted, before propagating the change. If the batch flag is
+# also set, synchronization will be aborted. When the path preference is used,
+# the same confirmation will be requested for top-level paths. (At the moment,
+# this flag only affects the text user interface.) See also the mountpoint
+# preference.
+confirmbigdeletes = true
+
+# File modification times (but not directory modtimes) are propagated.
+times = true
+
+# The group attributes of the files are not synchronized.
+group = false
+
+# The owner attributes of the files are not synchronized.
+owner = false
+
+# All bits but the set-uid and set-gid bits are synchronised
+perms = 0o1777
+
+# Log all changes to the filesystems on a file.
+log = true
+
+# The user interface will list changed files by size (smallest first) rather
+# than by name. This is useful, for example, for synchronizing over slow links,
+# since it puts very large files at the end of the list where they will not
+# prevent smaller files from being transferred quickly.
+sortbysize = true
+
+# The user interface will list newly created files before all others. This is
+# useful, for example, for checking that newly created files are not `junk',
+# i.e., ones that should be ignored or deleted rather than synchronized.
+sortnewfirst = true
+
+# This preference controls how much concurrency is allowed during the transport
+# phase. Normally, it should be set reasonably high (default is 20) to maximize
+# performance, but when Unison is used over a low-bandwidth link it may be
+# helpful to set it lower (e.g. to 1) so that Unison doesn't soak up all the
+# available bandwidth.
+maxthreads = 50
+
+# Turn on ssh compression.
+rshargs = -C
+
+# User interface will print status messages.
+terse = false
+
+# Ignore vim tmp files
+ignore = Name {.*.swp}
+ignore = Name {.*.swo}
+ignore = Name {*~}
+
+# Ignore Office tmp files
+ignore = Name {~$*}
+
+# vim: ft=conf

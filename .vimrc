@@ -119,4 +119,13 @@ iabbrev corot corto
 "           'formatlistpat' option.
 set formatoptions+=r,o,n
 
+" Set filetypes by file extension
+au BufNewFile,BufRead *.md set filetype=markdown
+
+" Set the previous context mark, find 1 or more consecutive spaces until the
+" end of the line and remove them.  When the search pattern fails, do not issue
+" an error message and, in particular, continue in maps as if no erro occurred.
+" Then return to the context mark.
+map ri m`:%s/\s\+$//e<CR>``
+
 execute pathogen#infect()

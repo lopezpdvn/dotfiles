@@ -1,0 +1,28 @@
+printf "Sourcing $USER@$HOSTNAME posixshell rc\n"
+
+# Source global definitions
+if [ -f /etc/mkshrc ]; then
+        . /etc/mkshrc
+fi
+
+alias xclipc="xclip -selection 'clipboard'"
+alias vim=vimx
+
+# ls: ignore backup files and set colorful output.
+alias ls='ls -B --color=always'
+
+# ls aliases to list only directories and files
+alias lf='ls -hl | grep -v '^d''
+alias ldir='ls -hl | grep '^d''
+
+# Show directory structure.
+alias ptree="tree -a -L 1 -P '*[^~]'"
+
+# set vi editing mode
+set -o vi
+
+# User has rw permissions for files and rwx for dirs, group and others has
+# none.
+umask 077
+
+# vim: ft=sh

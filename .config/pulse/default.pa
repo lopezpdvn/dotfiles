@@ -1,6 +1,9 @@
+# Add the contents of this file to `/etc/pulse/default.pa`. Don't create file
+# `$HOME/.config/pulse/default.pa`, it will prevent the daemon from running
+
 # Route Jack through Pulseaudio
 # Source: http://www.whatsmykarma.com/blog/?p=478
 # Below 2 lines not needed on Ubuntu Studio
 # load-module module-jack-source
 # load-module module-jack-sink
-# load-module module-loopback
+load-module module-loopback

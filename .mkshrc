@@ -5,6 +5,11 @@ if [ -f /etc/mkshrc ]; then
         . /etc/mkshrc
 fi
 
+# Source user definitions
+if [ -f "$HOME"/.my_posixshell_env ]; then
+        . "$HOME"/.my_posixshell_env
+fi
+
 alias xclipc="xclip -selection 'clipboard'"
 alias vim=vimx
 

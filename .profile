@@ -32,6 +32,11 @@ export PAGER="less"
 
 export EDITOR='vim'
 
+# Source user profile
+if [ -f "$HOME"/.my_posixshell_profile ]; then
+	. "$HOME"/.my_posixshell_profile
+fi
+
 who
 
 # vim: ft=sh

@@ -1,0 +1,28 @@
+# Use `xbindkeys -k` to find the keycodes for a particular key
+
+"quodlibet --seek=+00:15"
+    Control+Alt+Mod2+ KP_Right
+
+"quodlibet --seek=-00:15"
+    Control+Alt+Mod2+ KP_Left
+
+"quodlibet -- --seek=+00:05"
+    Control+Alt+Mod2+ KP_Next
+
+"quodlibet --seek=-00:05"
+    Control+Alt+Mod2+ KP_End
+
+"quodlibet --seek=+00:30"
+    Control+Alt+Mod2+ Alt_L
+
+"quodlibet --seek=-00:30"
+    Control+Alt+Mod2 + KP_Home
+
+"quodlibet --next"
+    Control+Alt+Mod2+ KP_Up
+
+"quodlibet --previous"
+    Control+Alt+Mod2+ KP_Down
+
+"quodlibet --play-pause"
+    Control+Alt+Mod2+ KP_Enter

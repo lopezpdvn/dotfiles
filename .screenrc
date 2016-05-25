@@ -1,0 +1,5 @@
+startup_message off
+
+hardstatus on
+hardstatus alwayslastline
+hardstatus string '%{= kr}[%{b G}%S%{= r}] %{= kw}%?%-Lw%?%{r} %{g}%n*%f%t%?(%u)%?%{r}%{w}%?%+Lw%?%?%= %{r}[%{b g}%H%{= r}]'

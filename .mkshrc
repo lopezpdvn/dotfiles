@@ -23,6 +23,8 @@ alias ldir='ls -hl | grep '^d''
 # Show directory structure.
 alias ptree="tree -a -L 1 -P '*[^~]'"
 
+alias cwd2clip='echo $(pwd) | xclip'
+
 # set vi editing mode
 set -o vi
 

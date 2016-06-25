@@ -66,6 +66,6 @@ ignore = Name {*~}
 ignore = Name {~$*}
 
 ignore = Name {node_modules}
-ignore = Name {.git}
+#ignore = Name {.git}
 
 # vim: ft=conf

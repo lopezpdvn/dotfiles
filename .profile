@@ -32,6 +32,10 @@ export PAGER="less"
 
 export EDITOR='vim'
 
+# .NET core, see http://pedroivanlopez.com/dotnet
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
+export COMPlus_INTERNAL_ThreadSuspendInjection=0
+
 # Source user profile
 if [ -f "$HOME"/.my_posixshell_profile ]; then
 	. "$HOME"/.my_posixshell_profile

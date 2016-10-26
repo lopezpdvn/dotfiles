@@ -1,0 +1,11 @@
+# GSR180BK
+# Bass Guitar
+# Ibanez
+# http://www.ibanez.com/products/eb_detail.php?year=2016&area_id=3&cat_id=2&series_id=55&data_id=83&color=CL01
+
+# Values are percentages
+
+[slap_pop_00]
+tone = 60
+bridge_pickup_volume = 100
+neck_pickup_volume = 100

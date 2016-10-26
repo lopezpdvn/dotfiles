@@ -1,0 +1,14 @@
+# Scarlett 2i2
+# USB Audio interface
+# Focusrite
+# https://global.focusrite.com/usb-audio-interfaces/scarlett-2i2
+
+# Line/instrument automatically ignored because using XLR connector
+# Adjust headphones output volume
+[bass_guitar_microphone_00]
+# ~40 degrees
+gain_01 = 6.5
+switch_48v = off
+direct_monitor = off
+
+# vim: ft=dosini

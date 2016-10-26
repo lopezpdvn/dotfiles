@@ -1,0 +1,10 @@
+# BAF-006
+# DI unit
+# Steren
+# http://www.steren.com.mx/caja-directa-o-direct-box-filtro-para-bafles.html
+
+[main]
+ground = on
+att = 0
+
+# vim: ft=dosini

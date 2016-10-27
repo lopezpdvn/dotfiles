@@ -1,0 +1,17 @@
+{
+  "system.mainwin_x": 0,
+  "system.mainwin_y": 25,
+  "system.mainwin_height": 551,
+  "system.mainwin_rack_height": 551,
+  "system.preset_window_height": 244,
+  "system.mul_buffer": 1,
+  "ui.skin_name": "gx7-blues",
+  "ui.latency_nowarn": 0,
+  "system.order_rack_h": 0,
+  "system.show_value": 0,
+  "system.show_tooltips": 1,
+  "system.animations": 1,
+  "system.show_presets": 0,
+  "system.show_toolbar": 1,
+  "system.show_rack": 1
+}

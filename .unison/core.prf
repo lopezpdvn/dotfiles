@@ -57,6 +57,8 @@ rshargs = -C
 # User interface will print status messages.
 terse = false
 
+killserver = true
+
 # Ignore vim tmp files
 ignore = Name {.*.swp}
 ignore = Name {.*.swo}

@@ -35,4 +35,6 @@ set -o vi
 # none.
 umask 077
 
+/bin/env python3 -c "from timeman import print_year_progress; print_year_progress()"
+
 # vim: ft=sh

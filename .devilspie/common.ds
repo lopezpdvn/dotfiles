@@ -1,3 +1,4 @@
 (begin
-    (undecorate)
+    (if (not (is (application_name) "taskcoach"))
+    (undecorate))
 )

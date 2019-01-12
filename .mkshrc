@@ -35,6 +35,10 @@ set -o vi
 # none.
 umask 077
 
+# XFreeRDP alias example, no clipboard, receive sound via PulseAudio,
+# auto-reconnect with unlimited retries, use all displays
+# alias myrdp='xfreerdp -clipboard /d:$WINDOWS_DOMAIN /u:$WINDOWS_USERNAME /v:$REMOTE_HOSTNAME /multimon /sound:sys:pulse +auto-reconnect /auto-reconnect-max-retries:0'
+
 /bin/env python3 -c "from timeman import print_year_progress; print_year_progress()"
 
 # vim: ft=sh

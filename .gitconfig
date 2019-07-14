@@ -4,6 +4,7 @@
 [core]
 	editor = vim
 	autocrlf = input
+    filemode = false
 	# autocrlf = true   # windows
 [merge]
 	tool = vimdiff
@@ -14,3 +15,4 @@
 [alias]
 	s = status -s
 	lg = log --oneline --all --graph --decorate
+    d = diff --word-diff=color

@@ -63,11 +63,11 @@ endif
 " The formatting will never be messed up when 'tabstop' is changed.
 set autoindent
 
-set tabstop=4       " Number of spaces that a <Tab> in the file counts for.
+set tabstop=2       " Number of spaces that a <Tab> in the file counts for.
 
 " Number of spaces to use for each step of (auto)indent.  Used for 'cindent',
 " >>, <<, etc.
-set shiftwidth=4
+set shiftwidth=2
 
 " In Insert mode: use the appropiate number of spaces to insert a <Tab>.
 " Spaces are used in indents with the '>' and '<' commands.  Note: to insert a
@@ -78,7 +78,7 @@ set expandtab
 " like inserting a <Tab> or using <BS>.  It 'feels' like <Tab>s are being
 " inserted, while in fact only spaces are used (because of 'expandtab' option
 " is set, see below).
-set softtabstop=4
+set softtabstop=2
 
 " When on, a <Tab> in front of a line inserts blanks according to 'shiftwidth'.
 " 'tabstop' or 'softtabstop' is used in other places.  A <BS> will delete a

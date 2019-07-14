@@ -2,5 +2,8 @@ printf "Sourcing $USER@$HOSTNAME cygwin posixshell profile\n"
 
 export CYGWINHOME="$(cygpath -u $CYGWINHOME)"
 export USERPROFILE="$(cygpath -u $USERPROFILE)"
+export EPIHOME="$(cygpath -u $EPIHOME)"
+
+export PYTHONPATH="$EPIHOME"/proj/timeman:"$EPIHOME"/proj/pytaskcoach:"$EPIHOME"/proj/pyatt:"$EPIHOME"/proj/pysyspol
 
 # vim: ft=sh

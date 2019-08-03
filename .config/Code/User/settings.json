@@ -2,5 +2,15 @@
 {
     "update.channel": "none",
     "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false
+    "telemetry.enableTelemetry": false,
+    "editor.tabSize": 2,
+    "java.home": "C:\\Users\\dreilopz\\AppData\\Local\\Programs\\AdoptOpenJDK",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    }
 }
